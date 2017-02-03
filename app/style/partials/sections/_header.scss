@@ -1,0 +1,37 @@
+@include border-box;
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.main-wrapper {
+  max-width: 768px;
+  margin: auto;
+  background-color: #2db7ca;
+  overflow: hidden;
+}
+.main-header {
+  position: relative;
+  min-height: 508px;
+  background-image: url(../img/head-bg1.png);
+}
+.main-logo {
+  display: inline-block;
+  margin-top: 20px;
+  margin-left: 32px;
+}
+.main-descr {
+  float: right;
+  margin-top: 40px;
+  margin-right: 20px;
+}
+.family {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+}
+@media all and (max-width: 664px) {
+  .main-header {
+  }
+}

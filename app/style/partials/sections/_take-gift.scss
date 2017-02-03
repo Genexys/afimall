@@ -1,0 +1,137 @@
+.take-gift {
+    position: relative;
+    margin: auto;
+    padding-top: 200px;
+    text-align: center;
+    background: radial-gradient(ellipse at 50% 50%, #FFFFFF 0, #99eaf5 46%, #2db7ca 108%);
+    h1 {
+      margin-bottom: 30px;
+      font-size: 38px;
+      color: #fff;
+      font-family: HelveticaNeueCyr-Bold, sans-serif;
+    }
+    &:before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 135px;
+      width: 100%;
+      height: 100%;
+      background-image: url(../img/cloud_btn.png);
+      background-position: 0 52%;
+      background-repeat: no-repeat;
+      background-size: 950px;
+    }
+}
+
+.take-gift__list {
+    max-width: 556px;
+    margin: auto;
+    text-align: left;
+    color: #024b5b;
+    font-size: 20px;
+
+    li {
+        position: relative;
+        font-family: HelveticaNeueCyr-Roman, sans-serif;
+
+        &:before {
+            height: 40px;
+            width: 60px;
+            display: block;
+            content: '';
+            position: absolute;
+            background: no-repeat 50%;
+            background-size: contain;
+            top: -4px;
+            left: -68px;
+        }
+        &:nth-child(1) {
+          &:before {
+            background: url(../img/clound-item-1.png);
+          }
+        }
+        &:nth-child(2) {
+          margin-top: 40px;
+          &:before {
+            background: url(../img/clound-item-2.png);
+          }
+        }
+        &:nth-child(3) {
+          margin-top: 173px;
+          &:before {
+            background: url(../img/clound-item-3.png);
+          }
+        }
+        &:nth-child(4) {
+          margin-top: 33px;
+          &:before {
+            background: url(../img/clound-item-4.png);
+          }
+        }
+    }
+}
+.take-gift__btn {
+    position: absolute;
+    top: 408px;
+    left: 0;
+    width: 100%;
+    height: 183px;
+    a {
+      height: 100px;
+      width: 49%;
+      display: inline-block;
+      margin-top: 38px;
+      background-color: #2db8ca;
+      box-shadow: 1px 5px 0px #268dab;
+    }
+    .apple-btn {
+      float: left;
+      border-bottom-right-radius: 200px;
+      border-top-right-radius: 200px;
+      img {
+        float: right;
+        margin-top: 20px;
+        margin-right: 80px;
+    }
+  }
+  .google-btn {
+    float: right;
+    border-bottom-left-radius: 200px;
+    border-top-left-radius: 200px;
+    img {
+      float: left;
+      margin-top: 20px;
+      margin-left: 80px;
+    }
+  }
+}
+.take-gift__about {
+  position: relative;
+  margin-top: 190px;
+  padding-bottom: 45px;
+  background-color: #fff;
+
+  p {
+    font-size: 26px;
+    font-family: HelveticaNeueCyr-Bold, sans-serif;
+    text-decoration: underline;
+    color: #7b9db0;
+  }
+  .take-gift__bnt-doc {
+    display: block;
+    max-width: 262px;
+    height: 46px;
+    margin: auto;
+    margin-top: 30px;
+    background-color: #2db8ca;
+    border-radius: 200px;
+    box-shadow: 1px 5px 0px #268dab;
+    font-size: 26px;
+    line-height: 46px;
+    font-family: HelveticaNeueCyr-Bold, sans-serif;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fff;
+  }
+}
