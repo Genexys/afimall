@@ -12,13 +12,15 @@ img {
 }
 .main-header {
   position: relative;
-  min-height: 508px;
-  background-image: url(../img/head-bg1.png);
+  min-height: 560px;
+  background: radial-gradient(ellipse at 14% -18%,#fff 25%,#99eaf5 42%,#2db7ca 100%);
+  // background-image: url(../img/head-bg1.png);
 }
 .main-logo {
   display: inline-block;
   margin-top: 20px;
   margin-left: 32px;
+  z-index: 6;
 }
 .main-descr {
   float: right;
@@ -31,7 +33,34 @@ img {
   bottom: 0;
   z-index: 0;
 }
-@media all and (max-width: 664px) {
+.cloud-bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  z-index: 0;
+  background-image: url(../img/cloud-bg1.png);
+  background-repeat: no-repeat;
+  background-position: bottom center;
+}
+@media all and (max-width: 688px) {
   .main-header {
+    text-align: center;
+  }
+  .main-logo {
+    margin: 20px auto 0;
+  }
+  .main-descr {
+    float: none;
+    margin: auto;
+    margin-top: 10px;
+  }
+  .family {
+    position: relative;
+    margin-top: 20px;
+  }
+  .cloud-bg {
+    background-position: 0 101%;
   }
 }

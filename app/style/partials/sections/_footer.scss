@@ -22,7 +22,6 @@
     width: 83px;
     height: 83px;
     border-radius: 50%;
-    margin-right: 15px;
     background-image: url("../img/soc-icon.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,4 +50,24 @@
     &:nth-of-type(4) {
         background-position: -404px 0;
     }
+}
+@media screen and (max-width: 460px) {
+  .soc-list__item {
+    width: 45px;
+    height: 45px;
+    &:nth-of-type(1) {
+        background-position: 0 0;
+    }
+
+    &:nth-of-type(2) {
+        background-position: -74px 0;
+    }
+
+    &:nth-of-type(3) {
+        background-position: -147px 0;
+    }
+    &:nth-of-type(4) {
+        background-position: -219px 0;
+    }
+  }
 }
